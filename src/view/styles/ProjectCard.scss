@@ -1,0 +1,21 @@
+.project-card {
+    position: absolute;
+    width: 22.5vw;
+    height: 30vw;
+    border: 1px solid rgba(0, 195, 255, .8);
+    background: rgba(0, 195, 255, 0.2);
+    box-shadow: 0 0 10px rgba(0, 195, 255, 1);
+    border-radius: 5px;
+    opacity: .8;
+    margin: 0 1.25vw;
+    // position: absolute;
+    transition: all 200ms ease-in-out;
+    &:hover {
+        box-shadow: 0 0 30px rgba(0, 195, 255, 1);
+        cursor: pointer;
+        transform: scale(1.1);
+        
+      }
+      z-index: 3;
+}
+

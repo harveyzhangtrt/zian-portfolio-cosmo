@@ -1,0 +1,119 @@
+
+@import url(https://fonts.googleapis.com/css?family=Rajdhani:300);
+
+$colorWhite: rgba(255,255,255,1);
+$colorDamnLight: rgba(0, 195, 255, .9);
+$colorDark: rgba(60,60,60,1);
+$colorBlack: rgba(33,33,33,1);
+$fontSize: 16px;
+
+
+.glow {
+  box-shadow: 0 0 50px $colorDamnLight;
+  border-color: rgba($colorWhite, .5);
+  background: $colorDamnLight;
+  color: rgba($colorWhite, 1);
+}
+
+.scifiUI {
+  width: 250px;
+  margin: 100px auto;
+  text-transform: uppercase;
+  font-size: $fontSize;
+  text-shadow: 1px 1px 1px $colorWhite;
+  &:hover {
+    h1 {
+      @extend .glow;
+      &:after {
+        border-top-color: rgba($colorWhite, .7);
+        }
+    }
+    ul li {
+      @extend .glow;
+      @for $i from 1 through 7 {
+        &:nth-child(#{$i}) {
+          left: 0;
+        }
+      }
+    }
+  }
+
+  * {
+    transition: left 200ms ease-in-out;
+  }
+  
+  h1 {
+    position: relative;
+    display: block;
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid $colorDamnLight;
+    background: rgba($colorDamnLight, .3);
+    color: $colorWhite;
+    font-size: 1.6em;
+    text-align: center;
+    cursor: pointer;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 5%;
+    z-index: 4;
+    
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 15px;
+      border-top: 10px solid $colorDamnLight;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 0;
+    }
+  }
+  
+  ul {
+
+    list-style: none;
+    position: relative;
+    top: -10px;
+    z-index: 4;
+    
+    li {
+      position: absolute;
+      display: block;
+      width: 250px;
+      height: 50px;
+      line-height: 50px;
+      border: 1px solid $colorDamnLight;
+      background: rgba($colorDamnLight, .2);
+      text-align: center;
+      font-size: 1.6em;
+      cursor: pointer;
+      border-top-left-radius: 5%;
+      border-top-right-radius: 20%;
+      border-bottom-left-radius: 20%;
+      border-bottom-right-radius: 5%;
+      
+      @extend .glow;
+      
+      @for $i from 1 through 7 {
+        &:nth-child(#{$i}) {
+          top: 50px * ($i - 1);
+          transition-delay: $i * 50ms;
+            left: -500%;
+            // opacity: 0;
+        }
+      }
+    
+      &:hover {
+        transform: scale(1.1);
+        transition: font-size 50ms ease-in-out;
+        font-size: 1.8em;
+        color: rgba($colorWhite, .9);
+        box-shadow: 0 0 35px white;
+      }
+    }
+  }
+}

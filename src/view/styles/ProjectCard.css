@@ -1,0 +1,22 @@
+.project-card {
+  position: absolute;
+  width: 22.5vw;
+  height: 30vw;
+  border: 1px solid rgba(0, 195, 255, 0.8);
+  background: rgba(0, 195, 255, 0.2);
+  -webkit-box-shadow: 0 0 10px #00c3ff;
+  box-shadow: 0 0 10px #00c3ff;
+  border-radius: 5px;
+  opacity: .8;
+  margin: 0 1.25vw;
+  -webkit-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  z-index: 3; }
+  .project-card:hover {
+    -webkit-box-shadow: 0 0 30px #00c3ff;
+    box-shadow: 0 0 30px #00c3ff;
+    cursor: pointer;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1); }

@@ -1,0 +1,134 @@
+@import url(https://fonts.googleapis.com/css?family=Rajdhani:300);
+.glow, .scifiUI:hover h1, .scifiUI:hover ul li, .scifiUI ul li {
+  -webkit-box-shadow: 0 0 50px rgba(0, 195, 255, 0.9);
+  box-shadow: 0 0 50px rgba(0, 195, 255, 0.9);
+  border-color: rgba(255, 255, 255, 0.5);
+  background: rgba(0, 195, 255, 0.9);
+  color: white; }
+
+.scifiUI {
+  width: 250px;
+  margin: 100px auto;
+  text-transform: uppercase;
+  font-size: 16px;
+  text-shadow: 1px 1px 1px white; }
+  .scifiUI:hover h1:after {
+    border-top-color: rgba(255, 255, 255, 0.7); }
+  .scifiUI:hover ul li:nth-child(1) {
+    left: 0; }
+  .scifiUI:hover ul li:nth-child(2) {
+    left: 0; }
+  .scifiUI:hover ul li:nth-child(3) {
+    left: 0; }
+  .scifiUI:hover ul li:nth-child(4) {
+    left: 0; }
+  .scifiUI:hover ul li:nth-child(5) {
+    left: 0; }
+  .scifiUI:hover ul li:nth-child(6) {
+    left: 0; }
+  .scifiUI:hover ul li:nth-child(7) {
+    left: 0; }
+  .scifiUI * {
+    -webkit-transition: left 200ms ease-in-out;
+    -o-transition: left 200ms ease-in-out;
+    transition: left 200ms ease-in-out; }
+  .scifiUI h1 {
+    position: relative;
+    display: block;
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid rgba(0, 195, 255, 0.9);
+    background: rgba(0, 195, 255, 0.3);
+    color: white;
+    font-size: 1.6em;
+    text-align: center;
+    cursor: pointer;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 5%;
+    z-index: 4; }
+    .scifiUI h1:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 15px;
+      border-top: 10px solid rgba(0, 195, 255, 0.9);
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 0; }
+  .scifiUI ul {
+    list-style: none;
+    position: relative;
+    top: -10px;
+    z-index: 4; }
+    .scifiUI ul li {
+      position: absolute;
+      display: block;
+      width: 250px;
+      height: 50px;
+      line-height: 50px;
+      border: 1px solid rgba(0, 195, 255, 0.9);
+      background: rgba(0, 195, 255, 0.2);
+      text-align: center;
+      font-size: 1.6em;
+      cursor: pointer;
+      border-top-left-radius: 5%;
+      border-top-right-radius: 20%;
+      border-bottom-left-radius: 20%;
+      border-bottom-right-radius: 5%; }
+      .scifiUI ul li:nth-child(1) {
+        top: 0px;
+        -webkit-transition-delay: 50ms;
+        -o-transition-delay: 50ms;
+        transition-delay: 50ms;
+        left: -500%; }
+      .scifiUI ul li:nth-child(2) {
+        top: 50px;
+        -webkit-transition-delay: 100ms;
+        -o-transition-delay: 100ms;
+        transition-delay: 100ms;
+        left: -500%; }
+      .scifiUI ul li:nth-child(3) {
+        top: 100px;
+        -webkit-transition-delay: 150ms;
+        -o-transition-delay: 150ms;
+        transition-delay: 150ms;
+        left: -500%; }
+      .scifiUI ul li:nth-child(4) {
+        top: 150px;
+        -webkit-transition-delay: 200ms;
+        -o-transition-delay: 200ms;
+        transition-delay: 200ms;
+        left: -500%; }
+      .scifiUI ul li:nth-child(5) {
+        top: 200px;
+        -webkit-transition-delay: 250ms;
+        -o-transition-delay: 250ms;
+        transition-delay: 250ms;
+        left: -500%; }
+      .scifiUI ul li:nth-child(6) {
+        top: 250px;
+        -webkit-transition-delay: 300ms;
+        -o-transition-delay: 300ms;
+        transition-delay: 300ms;
+        left: -500%; }
+      .scifiUI ul li:nth-child(7) {
+        top: 300px;
+        -webkit-transition-delay: 350ms;
+        -o-transition-delay: 350ms;
+        transition-delay: 350ms;
+        left: -500%; }
+      .scifiUI ul li:hover {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        -webkit-transition: font-size 50ms ease-in-out;
+        -o-transition: font-size 50ms ease-in-out;
+        transition: font-size 50ms ease-in-out;
+        font-size: 1.8em;
+        color: rgba(255, 255, 255, 0.9);
+        -webkit-box-shadow: 0 0 35px white;
+        box-shadow: 0 0 35px white; }
